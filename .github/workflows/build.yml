@@ -7,12 +7,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/sunriseduarte/450-tictactest-mvk:latest
-      credentials:
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
-    permissions:
-      contents: read
-      packages: read
     steps:
       - uses: actions/checkout@v4
 
@@ -23,12 +17,6 @@ jobs:
     runs-on: ubuntu-latest
     container:
       image: ghcr.io/sunriseduarte/450-tictactest-mvk:latest
-      credentials:
-        username: ${{ github.actor }}
-        password: ${{ secrets.GITHUB_TOKEN }}
-    permissions:
-      contents: read
-      packages: read
     steps:
       - uses: actions/checkout@v4
 
